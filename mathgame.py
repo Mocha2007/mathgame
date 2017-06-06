@@ -38,8 +38,8 @@ while 1:
 			else:print("Wrong!")
 		elif puzzle==3:
 			#multiplication puzzle level 1
-			a=random.randint(0,9)
-			b=random.randint(0,9)
+			a=random.randint(1,9)
+			b=random.randint(1,9)
 			try:
 				guess=int(input(str(a)+"*"+str(b)+"=?"))
 			except:
@@ -50,7 +50,7 @@ while 1:
 			else:print("Wrong!")
 		elif puzzle==4:
 			#division puzzle level 1
-			a=random.randint(0,9)
+			a=random.randint(1,9)
 			b=random.randint(1,9)
 			try:
 				guess=int(input(str(a*b)+"/"+str(b)+"=?"))
@@ -120,8 +120,8 @@ while 1:
 			else:print("Wrong!")
 		elif puzzle==10:
 			#multiplication puzzle level 2
-			a=random.randint(0,19)
-			b=random.randint(0,19)
+			a=random.randint(1,19)
+			b=random.randint(1,19)
 			try:
 				guess=int(input(str(a)+"*"+str(b)+"=?"))
 			except:
@@ -132,7 +132,7 @@ while 1:
 			else:print("Wrong!")
 		elif puzzle==11:
 			#division puzzle level 2
-			a=random.randint(0,19)
+			a=random.randint(1,19)
 			b=random.randint(1,19)
 			try:
 				guess=int(input(str(a*b)+"/"+str(b)+"=?"))
