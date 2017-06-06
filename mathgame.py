@@ -19,7 +19,7 @@ while 1:
 			try:
 				guess=int(input(str(a)+"+"+str(b)+"=?"))
 			except:
-				print("Wrong!")
+				pass
 			if guess==a+b:
 				score+=1
 				print("Correct!")
@@ -31,7 +31,7 @@ while 1:
 			try:
 				guess=int(input(str(a)+"-"+str(b)+"=?"))
 			except:
-				print("Wrong!")
+				pass
 			if guess==a-b:
 				score+=1
 				print("Correct!")
@@ -43,7 +43,7 @@ while 1:
 			try:
 				guess=int(input(str(a)+"*"+str(b)+"=?"))
 			except:
-				print("Wrong!")
+				pass
 			if guess==a*b:
 				score+=1
 				print("Correct!")
@@ -55,7 +55,7 @@ while 1:
 			try:
 				guess=int(input(str(a*b)+"/"+str(b)+"=?"))
 			except:
-				print("Wrong!")
+				pass
 			if guess==a:
 				score+=1
 				print("Correct!")
@@ -66,7 +66,7 @@ while 1:
 			try:
 				guess=int(input(str(a)+"^2=?"))
 			except:
-				print("Wrong!")
+				pass
 			if guess==a**2:
 				score+=1
 				print("Correct!")
@@ -77,7 +77,7 @@ while 1:
 			try:
 				guess=int(input("sqrt("+str(a**2)+")=?"))
 			except:
-				print("Wrong!")
+				pass
 			if guess==a:
 				score+=1
 				print("Correct!")
@@ -89,7 +89,7 @@ while 1:
 			try:
 				guess=int(input(str(m)+"x+"+str(-m*zero)+"=0, solve for x"))
 			except:
-				print("Wrong!")
+				pass
 			if guess==zero:
 				score+=1
 				print("Correct!")
@@ -101,7 +101,7 @@ while 1:
 			try:
 				guess=int(input(str(a)+"+"+str(b)+"=?"))
 			except:
-				print("Wrong!")
+				pass
 			if guess==a+b:
 				score+=1
 				print("Correct!")
@@ -113,7 +113,7 @@ while 1:
 			try:
 				guess=int(input(str(a)+"-"+str(b)+"=?"))
 			except:
-				print("Wrong!")
+				pass
 			if guess==a-b:
 				score+=1
 				print("Correct!")
@@ -125,7 +125,7 @@ while 1:
 			try:
 				guess=int(input(str(a)+"*"+str(b)+"=?"))
 			except:
-				print("Wrong!")
+				pass
 			if guess==a*b:
 				score+=1
 				print("Correct!")
@@ -137,7 +137,7 @@ while 1:
 			try:
 				guess=int(input(str(a*b)+"/"+str(b)+"=?"))
 			except:
-				print("Wrong!")
+				pass
 			if guess==a:
 				score+=1
 				print("Correct!")
