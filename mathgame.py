@@ -1,6 +1,12 @@
 import random,time
 while 1:
-	difficulty=int(input("Welcome to Mocha's Math Game.\nYour score is 2,000 divided by your time to correctly solve 10 random questions.\nEnter a difficulty (1,2,3) to start: "))
+	print("Welcome to Mocha's Math Game.\nYour score is 2,000 divided by your time to correctly solve 10 random questions.")
+	difficulty=0
+	while difficulty!="1" and difficulty!="2" and difficulty!="3":
+		difficulty=input("Enter a difficulty (1,2,3) to start: ")
+		if difficulty!="1" and difficulty!="2" and difficulty!="3":
+			print("Please type 1, 2, or 3. ")
+	difficulty=int(difficulty)
 	score=0
 	begin=time.time()
 	while score<10:
@@ -19,7 +25,7 @@ while 1:
 			try:
 				guess=int(input(str(a)+"+"+str(b)+"=?"))
 			except:
-				pass
+				guess="mocha"
 			if guess==a+b:
 				score+=1
 				print("Correct!")
@@ -31,7 +37,7 @@ while 1:
 			try:
 				guess=int(input(str(a)+"-"+str(b)+"=?"))
 			except:
-				pass
+				guess="mocha"
 			if guess==a-b:
 				score+=1
 				print("Correct!")
@@ -43,7 +49,7 @@ while 1:
 			try:
 				guess=int(input(str(a)+"*"+str(b)+"=?"))
 			except:
-				pass
+				guess="mocha"
 			if guess==a*b:
 				score+=1
 				print("Correct!")
@@ -55,7 +61,7 @@ while 1:
 			try:
 				guess=int(input(str(a*b)+"/"+str(b)+"=?"))
 			except:
-				pass
+				guess="mocha"
 			if guess==a:
 				score+=1
 				print("Correct!")
@@ -66,7 +72,7 @@ while 1:
 			try:
 				guess=int(input(str(a)+"^2=?"))
 			except:
-				pass
+				guess="mocha"
 			if guess==a**2:
 				score+=1
 				print("Correct!")
@@ -77,7 +83,7 @@ while 1:
 			try:
 				guess=int(input("sqrt("+str(a**2)+")=?"))
 			except:
-				pass
+				guess="mocha"
 			if guess==a:
 				score+=1
 				print("Correct!")
@@ -89,7 +95,7 @@ while 1:
 			try:
 				guess=int(input(str(m)+"x+"+str(-m*zero)+"=0, solve for x"))
 			except:
-				pass
+				guess="mocha"
 			if guess==zero:
 				score+=1
 				print("Correct!")
@@ -101,7 +107,7 @@ while 1:
 			try:
 				guess=int(input(str(a)+"+"+str(b)+"=?"))
 			except:
-				pass
+				guess="mocha"
 			if guess==a+b:
 				score+=1
 				print("Correct!")
@@ -113,7 +119,7 @@ while 1:
 			try:
 				guess=int(input(str(a)+"-"+str(b)+"=?"))
 			except:
-				pass
+				guess="mocha"
 			if guess==a-b:
 				score+=1
 				print("Correct!")
@@ -125,7 +131,7 @@ while 1:
 			try:
 				guess=int(input(str(a)+"*"+str(b)+"=?"))
 			except:
-				pass
+				guess="mocha"
 			if guess==a*b:
 				score+=1
 				print("Correct!")
@@ -137,7 +143,7 @@ while 1:
 			try:
 				guess=int(input(str(a*b)+"/"+str(b)+"=?"))
 			except:
-				pass
+				guess="mocha"
 			if guess==a:
 				score+=1
 				print("Correct!")
