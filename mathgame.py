@@ -120,7 +120,7 @@ while 1:
 			else:print("Wrong!")
 		elif puzzle==10:
 			#multiplication puzzle level 2
-			a=random.randint(1,19)
+			a=random.randint(10,19)
 			b=random.randint(1,19)
 			try:
 				guess=int(input(str(a)+"*"+str(b)+"=?"))
@@ -132,7 +132,7 @@ while 1:
 			else:print("Wrong!")
 		elif puzzle==11:
 			#division puzzle level 2
-			a=random.randint(1,19)
+			a=random.randint(10,19)
 			b=random.randint(1,19)
 			try:
 				guess=int(input(str(a*b)+"/"+str(b)+"=?"))
